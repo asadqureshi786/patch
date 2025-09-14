@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" x-data="{showMenu : false}" >
 
 <head>
     <meta charset="UTF-8">
@@ -8,216 +8,399 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <!-- Owl Carousel CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    
+        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
 
     <link rel="stylesheet" href="./src/output.css">
 </head>
 
 <body class="bg-black">
     <div class="main_wrapper">
-        <div class="container ">    
-            <Header class="flex justify-between py-6 items-center relative z-1">
+        <div class="container ">
+            <Header class="flex justify-between py-6 items-center hidden relative z-1">
                 <a href="#" class="flex items-center gap-5">
                     <img src="./src/img/logo.png" class="w-[60px] h-auto" alt="">
                     <span class="text-primary text-3xl font-[700]">Patch Dispatcher</span>
                 </a>
                 <ul class="flex justify-betweens gap-7 uppercase text-white text-[13px] font-[600]">
-                    <li class=" hover:text-primary transition-all-ease" >
+                    <li class=" hover:text-primary transition-all-ease">
                         <a href="#">About</a>
                     </li>
-                    <li class=" hover:text-primary transition-all-ease" >
+                    <li class=" hover:text-primary transition-all-ease">
                         <a href="#">Services</a>
                     </li>
-                    <li class=" hover:text-primary transition-all-ease" >
+                    <li class=" hover:text-primary transition-all-ease">
                         <a href="#">Work</a>
                     </li>
-                    <li class=" hover:text-primary transition-all-ease" >
+                    <li class=" hover:text-primary transition-all-ease">
                         <a href="#">Contact</a>
                     </li>
                 </ul>
             </Header>
-        </div>
-       <div class="h-[100vh]">
-         <div class="fixed banner h-[100vh] w-full flex justify-center items-center top-[50%] bg-[url(./img/banner.jpg)] bg-cover bg-no-repeat left-[50%] translate-x-[-50%] translate-y-[-50%] w-full ">
-            <div class="container relative z-1 px-[140px] text-center ">
-                <div class="text-[60px] text-white uppercase font-[800]">
-                    <h4 class="leading-[50px]" ><span class="text-primary ">Innovative</span> Design</h4>
-                    <h4 class="" >for Your <span class="text-primary ">Business!</span></h4>
-                </div>
-                <p class="text-white text-base" >Our company produces the best quality patches of all kinds according to the customer's</p>
-                <p class="text-white text-base" > needs and delivers them to the customer's doorstep without any hassle</p>
-               <a href="#contact" class="btn btn-secondary relative mt-6">
-                <span class="top">Connect</span>
-                <span class="bottom">Connect</span>
-            </a>
-            </div>
-        </div>
-       </div>
-
-        <div class="upper_layer h-full sticky z-2 top-0 bg-black h-[500px] rounded-tl-[100px] rounded-tr-[100px]">
-           <div class="container">
-
-            <!-- About Section Start -->
-            <div class="about_us pt-25">
-                <div class="sub_head">
-                    <div class="sm"><i class="fa-solid fa-circle-exclamation"></i> About Us</div>
-                    <div class="heading">WHY CHOOSE <span>US?</span></div>
-                    <div class="text">
-                        <p class="px-[200px]" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus fuga voluptas saepe, quos mollitia alias  inventore doloribus unde reprehenderit et lorem ipsum dolor sit amet consectetur adipisicing elit. Minus fuga voluptas saepe .</p>
-                    </div>
-                </div>
-            </div>
-            <!-- About Section End-->
-
-
-            <!-- Included Feature Start-->
-             <div class="included_feature pt-25">
-                <div class="sub_head">
-                    <div class="sm"><i class="fa-solid fa-circle-exclamation"></i> Included Features</div>
-                    <div class="heading">Why Choose Our  <span>Patches</span></div>
-                    <div class="text ">
-                        <p class="px-[200px]" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus fuga voluptas saepe, quos mollitia alias  inventore doloribus unde reprehenderit et Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus fuga voluptas saepe.</p>
-                    </div>
-                </div>
-
-                <div class="grid grid-cols-4 gap-6 mt-[50px]">
-                    <div class="bg-black2 border-light border-1 rounded-[20px] p-[20px]">
-                        <span class="text-[30px] inline-block mb-[10px] text-primary" ><i class="fa-solid fa-check"></i></span>
-                        <h4 class="text-white uppercase text-[20px] mb-2 font-[700]">Premium Quality</h4>
-                        <p class="text-base" >Durable materials and precise stitching for long-lasting patches</p>
-                    </div>
-                    <div class="bg-black2 border-light border-1 rounded-[20px] p-[20px]">
-                        <span class="text-[30px] inline-block mb-[10px] text-primary" ><i class="fa-solid fa-cloud-bolt"></i></span>
-                        <h4 class="text-white uppercase text-[20px] mb-2 font-[700]">Fast Turnaround</h4>
-                        <p class="text-base" >Quick production and shipping to meet your deadlines</p>
-                    </div>
-                    <div class="bg-black2 border-light border-1 rounded-[20px] p-[20px]">
-                        <span class="text-[30px] inline-block mb-[10px] text-primary" ><i class="fa-solid fa-palette"></i></span>
-                        <h4 class="text-white uppercase text-[20px] mb-2 font-[700]">Fast Turnaround</h4>
-                        <p class="text-base" >Quick production and shipping to meet your deadlines</p>
-                    </div>
-                    <div class="bg-black2 border-light border-1 rounded-[20px] p-[20px]">
-                        <span class="text-[30px] inline-block mb-[10px] text-primary" ><i class="fa-solid fa-tags"></i></span>
-                        <h4 class="text-white uppercase text-[20px] mb-2 font-[700]">Fast Turnaround</h4>
-                        <p class="text-base" >Quick production and shipping to meet your deadlines</p>
-                    </div>
-
-                </div>
-
-            </div>
-             <!-- Included Feature End-->
-
-             <!-- Our Services Section Start -->
             
-            <div class="all_servies pt-25">
+            <Header>
+                <div class="menu relative z-1 py-6 " id="main_header" >
+                    <div class="md:grid flex justify-between items-center md:grid-cols-3 items-center">
+                    <div class="cursor-pointer text-white" @click="showMenu = !showMenu">
+                        <span class="text-white text-[28px]">
+                            <i class="fa-solid fa-bars"></i>
+                        </span>
+                    </div>    
+                    <div class="text-center">
+                        <img src="./src/img/logo.png" class="w-[80px] h-auto mx-auto" alt="">
+                    </div>
+                    <ul class=" justify-end items-center gap-[15px] hidden md:flex">
+                        <li><a href="#" class="rounded-full text-black2 bg-white p-[3px] text-[18px]"><i
+                                    class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#" class="rounded-full text-black2 bg-white p-[3px] text-[18px]"><i
+                                    class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#" class="rounded-full text-black2 bg-white p-[3px] text-[18px]"><i
+                                    class="fa-brands fa-linkedin"></i></a></li>
+
+                    </ul>
+                </div>
+                
+                
+                
+                
+
+                </div>
+            </Header>
+
+            <!-- Sidebar Menu Start -->
+             <div class="fixed top-0 left-0  h-[100vh] w-full bg-black2 z-100 " x-transition x-show="showMenu" >
+                 <img src="./src/img/logo.png" class="w-[80px] h-auto mx-auto absolute top-5 left-5 transition-all ease-in" alt="">
+                 <span class="text-white absolute top-5 right-5 text-[30px] cursor-pointer" @click="showMenu = !showMenu" >
+                     <i class="fa-solid fa-xmark" ></i>
+                 </span>
+
+               <ul class="flex justify-center h-[100%] w-[100%] flex-col gap-7 items-center uppercase text-white text-[20px] font-[600]">
+                   <li class=" hover:text-primary transition-all-ease">
+                       <a href="#about" @click="showMenu = !showMenu" >About</a>
+                   </li>
+                   <li class=" hover:text-primary transition-all-ease">
+                       <a href="#servies" @click="showMenu = !showMenu" >Services</a>
+                   </li>
+                   <li class=" hover:text-primary transition-all-ease">
+                       <a href="#portfolio" @click="showMenu = !showMenu" >Portfolio</a>
+                   </li>
+                   <li class=" hover:text-primary transition-all-ease">
+                       <a href="#contact" @click="showMenu = !showMenu" >Contact</a>
+                   </li>
+               </ul>
+             </div>
+            <!-- Sidebar Menu End -->
+
+        </div>
+        <div class="h-[100vh]">
+            <div
+                class="fixed banner h-[100vh] w-full flex justify-center items-center top-[50%] bg-[url(./img/banner.jpg)] bg-cover bg-no-repeat left-[50%] translate-x-[-50%] translate-y-[-50%] w-full ">
+                <div class="container relative z-1   text-center ">
+                    <div class="text-[30px] md:text-[60px] text-white uppercase font-[800]">
+                        <!-- custom Digitizing & Vectorizing -->
+                        <h4 class="leading-[50px]"><span class="text-primary ">Custom </span> Design Vectorizing</h4>
+                        <h4 class="">for Your <span class="text-primary ">Business!</span></h4>
+                    </div>
+                    <p class="text-white text-base">Our company produces the best quality patches of all kinds according
+                        to the customer's</p>
+                    <p class="text-white text-base"> needs and delivers them to the customer's doorstep without any
+                        hassle</p>
+                    <a href="#contact" class="btn btn-secondary relative mt-6">
+                        <span class="top">Connect</span>
+                        <span class="bottom">Connect</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="upper_layer h-full sticky z-2 top-0 bg-black3 h-[500px] rounded-tl-[100px] rounded-tr-[100px]">
+            <div class="container">
+
+                <!-- About Section Start -->
+                <div class="about_us pt-25" id="about" >
+                    <div class="sub_head">
+                        <div class="sm"><i class="fa-solid fa-circle-exclamation"></i> About Us</div>
+                        <div class="heading">WHY CHOOSE <span>US?</span></div>
+                        <div class="text">
+                            <p class=" px-0 md:px-[200px] ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus fuga
+                                voluptas saepe, quos mollitia alias inventore doloribus unde reprehenderit et lorem
+                                ipsum dolor sit amet consectetur adipisicing elit. Minus fuga voluptas saepe .</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- About Section End-->
+
+
+                <!-- Included Feature Start-->
+                <div class="included_feature pt-25">
+                    <div class="sub_head">
+                        <div class="sm"><i class="fa-solid fa-circle-exclamation"></i> Included Features</div>
+                        <div class="heading">Why Choose Our <span>Patches</span></div>
+                        <div class="text ">
+                            <p class="px-0 md:px-[200px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus fuga
+                                voluptas saepe, quos mollitia alias inventore doloribus unde reprehenderit et Lorem
+                                ipsum dolor sit amet consectetur adipisicing elit. Minus fuga voluptas saepe.</p>
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-4 gap-6 mt-[50px]">
+                        <div class="bg-black2 border-light border-1 rounded-[20px] p-[20px]">
+                            <span class="text-[30px] inline-block mb-[10px] text-primary"><i
+                                    class="fa-solid fa-check"></i></span>
+                            <h4 class="text-white uppercase text-[20px] mb-2 font-[700]">Premium Quality</h4>
+                            <p class="text-base">Durable materials and precise stitching for long-lasting patches</p>
+                        </div>
+                        <div class="bg-black2 border-light border-1 rounded-[20px] p-[20px]">
+                            <span class="text-[30px] inline-block mb-[10px] text-primary"><i
+                                    class="fa-solid fa-cloud-bolt"></i></span>
+                            <h4 class="text-white uppercase text-[20px] mb-2 font-[700]">Fast Turnaround</h4>
+                            <p class="text-base">Quick production and shipping to meet your deadlines</p>
+                        </div>
+                        <div class="bg-black2 border-light border-1 rounded-[20px] p-[20px]">
+                            <span class="text-[30px] inline-block mb-[10px] text-primary"><i
+                                    class="fa-solid fa-palette"></i></span>
+                            <h4 class="text-white uppercase text-[20px] mb-2 font-[700]">Fast Turnaround</h4>
+                            <p class="text-base">Quick production and shipping to meet your deadlines</p>
+                        </div>
+                        <div class="bg-black2 border-light border-1 rounded-[20px] p-[20px]">
+                            <span class="text-[30px] inline-block mb-[10px] text-primary"><i
+                                    class="fa-solid fa-tags"></i></span>
+                            <h4 class="text-white uppercase text-[20px] mb-2 font-[700]">Fast Turnaround</h4>
+                            <p class="text-base">Quick production and shipping to meet your deadlines</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- Included Feature End-->
+
+                <!-- Portfolio Start -->
+                <div class="portfolio_se pt-25" id="portfolio">
+                    <div class="sub_head mb-10">
+                        <div class="sm"><i class="fa-solid fa-circle-exclamation"></i> Portfolio</div>
+                        <div class="heading">BEHAVIOR SHOWS <span>WORTH</span></div>
+                        <div class="text ">
+                            <p class="px-0 md:px-[200px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus fuga
+                                voluptas saepe, quos mollitia alias inventore doloribus unde reprehenderit et Lorem
+                                ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+
+                    <div class="item bg-black2 rounded-[20px] md:p-[48px] p-[30px] border-1 border-light border-solid">
+                        <div class="grid md:grid-cols-2 gap-[50px] items-center">
+                            <div class="content">
+                                <h4 class="text-white text-[30px] font-[700] mb-2">Vectorizing Services</h4>
+                                <p class="text-base">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero
+                                    optio, dolorum dicta autem illum esse, deleniti reprehenderit accusamus similique in
+                                    quia numquam at asperiores rem libero sint! Fuga vero repudiandae aut alias
+                                    quibusdam qui cupiditate, aliquid animi ipsam debitis ipsum voluptate rem, tempore
+                                    ullam possimus, perspiciatis laudantium dolorum incidunt tempora!</p>
+                                <a href="#contact" class="btn btn-secondary relative mt-6">
+                                    <span class="top">Connect</span>
+                                    <span class="bottom">Connect</span>
+                                </a>
+                            </div>
+                            <div class="content">
+                                <img src="./src/img/offer/Vector-Artwork.jpg " class="w-[100%] rounded-[20px]" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="item bg-black2 rounded-[20px]  md:p-[48px] p-[30px]  border-1 border-light border-solid">
+                        <div class="grid md:grid-cols-2 gap-[50px] items-center">
+                            <div class="content">
+                                <h4 class="text-white text-[30px] font-[700] mb-2">Embroidery Digitizing Services</h4>
+                                <p class="text-base">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero
+                                    optio, dolorum dicta autem illum esse, deleniti reprehenderit accusamus similique in
+                                    quia numquam at asperiores rem libero sint! Fuga vero repudiandae aut alias
+                                    quibusdam qui cupiditate, aliquid animi ipsam debitis ipsum voluptate rem, tempore
+                                    ullam possimus, perspiciatis laudantium dolorum incidunt tempora!</p>
+                                <a href="#contact" class="btn btn-secondary relative mt-6">
+                                    <span class="top">Connect</span>
+                                    <span class="bottom">Connect</span>
+                                </a>
+                            </div>
+                            <div class="content">
+                                <img src="./src/img/offer/Digitize-Artwork-1 (1).jpg " class="w-[100%] rounded-[20px]"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item bg-black2 rounded-[20px] md:p-[48px] p-[30px]border-1 border-light border-solid">
+                        <div class="grid md:grid-cols-2 gap-[50px] items-center">
+                            <div class="content">
+                                <h4 class="text-white text-[30px] font-[700] mb-2">Vectorizing Services</h4>
+                                <p class="text-base">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero
+                                    optio, dolorum dicta autem illum esse, deleniti reprehenderit accusamus similique in
+                                    quia numquam at asperiores rem libero sint! Fuga vero repudiandae aut alias
+                                    quibusdam qui cupiditate, aliquid animi ipsam debitis ipsum voluptate rem, tempore
+                                    ullam possimus, perspiciatis laudantium dolorum incidunt tempora!</p>
+                                <a href="#contact" class="btn btn-secondary relative mt-6">
+                                    <span class="top">Connect</span>
+                                    <span class="bottom">Connect</span>
+                                </a>
+                            </div>
+                            <div class="content">
+                                <img src="./src/img/offer/Patches-2.jpg" class="w-[100%] rounded-[20px]" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item bg-black2 rounded-[20px] md:p-[48px] p-[30px] border-1 border-light border-solid">
+                        <div class="grid md:grid-cols-2 gap-[50px] items-center">
+                            <div class="content">
+                                <h4 class="text-white text-[30px] font-[700] mb-2">Vectorizing Services</h4>
+                                <p class="text-base">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero
+                                    optio, dolorum dicta autem illum esse, deleniti reprehenderit accusamus similique in
+                                    quia numquam at asperiores rem libero sint! Fuga vero repudiandae aut alias
+                                    quibusdam qui cupiditate, aliquid animi ipsam debitis ipsum voluptate rem, tempore
+                                    ullam possimus, perspiciatis laudantium dolorum incidunt tempora!</p>
+                                <a href="#contact" class="btn btn-secondary relative mt-6">
+                                    <span class="top">Connect</span>
+                                    <span class="bottom">Connect</span>
+                                </a>
+                            </div>
+                            <div class="content">
+                                <img src="./src/img/offer/Labels.jpg" class="w-[100%] rounded-[20px]" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <!-- Portfolio End -->
+
+                <!-- Our Services Section Start -->
+                <div class="all_servies pt-25" id="servies">
+                    <div class="sub_head">
+                        <div class="sm"><i class="fa-solid fa-circle-exclamation"></i> The Services</div>
+                        <div class="heading">Patch Types We <span>Offer</span></div>
+                        <div class="text ">
+                            <p class="px-0 md:px-[200px]">From start to finish, our work process is as simple as they come. But
+                                the journey is always magic!</p>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-4 gap-6 mt-[50px] owl-carousel service_offers relative">
+                        <div class="bg-black2 border-light border-1 rounded-[20px] p-[20px] text-center">
+                            <img src="./src/img/New folder/embroidery-patch.png" class="w-20 h-auto mx-auto mb-[20px]"
+                                alt="">
+                            <h4 class="text-white uppercase text-[20px] mb-2 font-[700]">Embroidery Patches</h4>
+                            <p class="text-base">Durable, versatile patches with a soft backing, ideal for uniforms,
+                                promotional items, and everyday wear.</p>
+                        </div>
+                        <div class="bg-black2 border-light border-1 rounded-[20px] p-[20px] text-center">
+                            <img src="./src/img/New folder/logo.png" class="w-20 2-auto mx-auto mb-[20px]" alt="">
+                            <h4 class="text-white uppercase text-[20px] mb-2 font-[700]">PVC Patches</h4>
+                            <p class="text-base">Durable, waterproof patches with a 3D effect, ideal for outdoor and
+                                tactical use.</p>
+                        </div>
+                        <div class="bg-black2 border-light border-1 rounded-[20px] p-[20px] text-center">
+                            <img src="./src/img/New folder/sublimation-patches.png"
+                                class="w-20 h-auto mx-auto mb-[20px]" alt="">
+                            <h4 class="text-white uppercase text-[20px] mb-2 font-[700]">PVC Patches</h4>
+                            <p class="text-base">Durable, waterproof patches with a 3D effect, ideal for outdoor and
+                                tactical use.</p>
+                        </div>
+                        <div class="bg-black2 border-light border-1 rounded-[20px] p-[20px] text-center">
+                            <img src="./src/img/New folder/chenille.png" class="w-50 2-auto mx-auto mb-[20px]" alt="">
+                            <h4 class="text-white uppercase text-[20px] mb-2 font-[700]">PVC Patches</h4>
+                            <p class="text-base">Durable, waterproof patches with a 3D effect, ideal for outdoor and
+                                tactical use.</p>
+                        </div>
+                        <div class="bg-black2 border-light border-1 rounded-[20px] p-[20px] text-center">
+                            <img src="./src/img/New folder/woven-patches.png" class="w-20 h-auto mx-auto mb-[20px]"
+                                alt="">
+                            <h4 class="text-white uppercase text-[20px] mb-2 font-[700]">PVC Patches</h4>
+                            <p class="text-base">Durable, waterproof patches with a 3D effect, ideal for outdoor and
+                                tactical use.</p>
+                        </div>
+                        <div class="bg-black2 border-light border-1 rounded-[20px] p-[20px] text-center">
+                            <img src="./src/img/New folder/leather-patches.png" class="w-20 h-auto mx-auto mb-[20px]"
+                                alt="">
+                            <h4 class="text-white uppercase text-[20px] mb-2 font-[700]">PVC Patches</h4>
+                            <p class="text-base">Durable, waterproof patches with a 3D effect, ideal for outdoor and
+                                tactical use.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- Our Services Section End -->
+
+            <!-- Contact Section Start -->
+            <div class="contact_us container pt-25" id="contact" >
                 <div class="sub_head">
-                    <div class="sm"><i class="fa-solid fa-circle-exclamation"></i> The Services</div>
-                    <div class="heading">Patch Types We   <span>Offer</span></div>
-                    <div class="text ">
-                        <p class="px-[200px]" >From start to finish, our work process is as simple as they come. But the journey is always magic!</p>
-                    </div>
-                </div>
-
-                <div class="grid grid-cols-4 gap-6 mt-[50px] owl-carousel service_offers relative">
-                    <div class="bg-black2 border-light border-1 rounded-[20px] p-[20px] text-center">
-                        <img src="./src/img/New folder/embroidery-patch.png" class="w-20 h-auto mx-auto mb-[20px]" alt="">
-                        <h4 class="text-white uppercase text-[20px] mb-2 font-[700]">Embroidery Patches</h4>
-                        <p class="text-base" >Durable, versatile patches with a soft backing, ideal for uniforms, promotional items, and everyday wear.</p>
-                    </div>
-                    <div class="bg-black2 border-light border-1 rounded-[20px] p-[20px] text-center">
-                        <img src="./src/img/New folder/logo.png" class="w-20 2-auto mx-auto mb-[20px]" alt="">
-                        <h4 class="text-white uppercase text-[20px] mb-2 font-[700]">PVC Patches</h4>
-                        <p class="text-base" >Durable, waterproof patches with a 3D effect, ideal for outdoor and tactical use.</p>
-                    </div>
-                    <div class="bg-black2 border-light border-1 rounded-[20px] p-[20px] text-center">
-                        <img src="./src/img/New folder/sublimation-patches.png" class="w-20 h-auto mx-auto mb-[20px]" alt="">
-                        <h4 class="text-white uppercase text-[20px] mb-2 font-[700]">PVC Patches</h4>
-                        <p class="text-base" >Durable, waterproof patches with a 3D effect, ideal for outdoor and tactical use.</p>
-                    </div>
-                    <div class="bg-black2 border-light border-1 rounded-[20px] p-[20px] text-center">
-                        <img src="./src/img/New folder/chenille.png" class="w-50 2-auto mx-auto mb-[20px]" alt="">
-                        <h4 class="text-white uppercase text-[20px] mb-2 font-[700]">PVC Patches</h4>
-                        <p class="text-base" >Durable, waterproof patches with a 3D effect, ideal for outdoor and tactical use.</p>
-                    </div>
-                    <div class="bg-black2 border-light border-1 rounded-[20px] p-[20px] text-center">
-                        <img src="./src/img/New folder/woven-patches.png" class="w-20 h-auto mx-auto mb-[20px]" alt="">
-                        <h4 class="text-white uppercase text-[20px] mb-2 font-[700]">PVC Patches</h4>
-                        <p class="text-base" >Durable, waterproof patches with a 3D effect, ideal for outdoor and tactical use.</p>
-                    </div>
-                    <div class="bg-black2 border-light border-1 rounded-[20px] p-[20px] text-center">
-                        <img src="./src/img/New folder/leather-patches.png" class="w-20 h-auto mx-auto mb-[20px]" alt="">
-                        <h4 class="text-white uppercase text-[20px] mb-2 font-[700]">PVC Patches</h4>
-                        <p class="text-base" >Durable, waterproof patches with a 3D effect, ideal for outdoor and tactical use.</p>
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            </div>
-             <!-- Our Services Section End -->
-
-             <!-- Contact Section Start -->
-            <div class="contact_us pt-25">
-                 <div class="sub_head">
                     <div class="sm"><i class="fa-solid fa-circle-exclamation"></i> Find Us</div>
                     <div class="heading">Let'Get In<span>TOUCH</span></div>
                     <div class="text ">
-                        <p class="px-[200px]" >Contact us for more information or assistance.</p>
+                        <p class="px-0 md:px-[200px]">Contact us for more information or assistance.</p>
                     </div>
                 </div>
 
                 <div class="">
                     <div class="grid grid-cols-12 justify-center">
-                        <div class="col-span-6 col-start-4">
-                             <form action="" class="border-1 border-solid border-light rounded-[20px] p-[20px] mt-[40px]" >
-                        <div class="group">
-                            <label for="">Name</label>
-                            <input type="text" class="form-control" >
-                        </div>
-                        <div class="group">
-                            <label for="">Email</label>
-                            <input type="text" class="form-control" >
-                        </div>
-                        <div class="group">
-                            <label for="">Subject</label>
-                            <input type="text" class="form-control" >
-                        </div>
-                        <div class="group">
-                            <label for="">Subject</label>
-                            <textarea name="" class="form-control" id=""></textarea>
-                        </div>
-                        <div class="text-center">
-                             <a href="#contact" class="btn btn-secondary relative mt-6">
-                <span class="top">Connect</span>
-                <span class="bottom">Connect</span>
-            </a>
-                        </div>
-                    </form>
+                        <div class="md:col-span-6 col-span-12 md:col-start-4">
+                            <form action=""
+                                class="border-1 border-solid border-light rounded-[20px] p-[20px] mt-[40px]">
+                                <div class="group">
+                                    <label for="">Name</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="group">
+                                    <label for="">Email</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="group">
+                                    <label for="">Subject</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="group">
+                                    <label for="">Subject</label>
+                                    <textarea name="" class="form-control" id=""></textarea>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#contact" class="btn btn-secondary relative mt-6">
+                                        <span class="top">Connect</span>
+                                        <span class="bottom">Connect</span>
+                                    </a>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
 
             </div>
-             <!-- Contact Section End -->
+            <!-- Contact Section End -->
 
-             <!-- Footer Section Start -->
-            <footer class="rounded-t-[100px] mt-[100px] bg-black2" >
+            <!-- Footer Section Start -->
+            <footer class="rounded-t-[100px] mt-[100px] bg-black2">
                 <div class="container pt-[80px]">
                     <div class="flex flex-col">
-                            <img src="./src/img/logo.png" class="w-35 mx-auto" alt="">
-                         <div class="my-6" >
-                                <ul class="flex justify-center items-center gap-[15px]">
-                                <li><a href="#" class="rounded-full text-black2 bg-white p-[6px] text-[20px]" ><i class="fa-brands fa-facebook-f"></i></a></li>
-                                <li><a href="#" class="rounded-full text-black2 bg-white p-[6px] text-[20px]" ><i class="fa-brands fa-instagram"></i></a></li>
-                                <li><a href="#" class="rounded-full text-black2 bg-white p-[6px] text-[20px]" ><i class="fa-brands fa-linkedin"></i></a></li>
-                                <li><a href="#" class="rounded-full text-black2 bg-white p-[6px] text-[20px]" ><i class="fa-brands fa-square-x-twitter"></i></a></li>
-                                <li><a href="#" class="rounded-full text-black2 bg-white p-[6px] text-[20px]" ><i class="fa-brands fa-youtube"></i></a></li>
+                        <img src="./src/img/logo.png" class="w-35 mx-auto" alt="">
+                        <div class="my-6">
+                            <ul class="flex justify-center items-center  gap-[15px]">
+                                <li><a href="#" class="rounded-full text-black2 bg-white p-[6px] text-[20px]"><i
+                                            class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#" class="rounded-full text-black2 bg-white p-[6px] text-[20px]"><i
+                                            class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="#" class="rounded-full text-black2 bg-white p-[6px] text-[20px]"><i
+                                            class="fa-brands fa-linkedin"></i></a></li>
+                                <li><a href="#" class="rounded-full text-black2 bg-white p-[6px] text-[20px]"><i
+                                            class="fa-brands fa-square-x-twitter"></i></a></li>
+                                <li><a href="#" class="rounded-full text-black2 bg-white p-[6px] text-[20px]"><i
+                                            class="fa-brands fa-youtube"></i></a></li>
                             </ul>
-                         </div>
-                            <div>
-                                <ul class="flex justify-center gap-10 mt-4 uppercase text-white text-[13px] font-[600]">
+                        </div>
+                        <div>
+                            <ul class="flex justify-center gap-10 mt-4 flex-col md:flex-row items-center uppercase text-white text-[13px] font-[600]">
                                 <li>
                                     <a href="#">About</a>
                                 </li>
@@ -231,42 +414,62 @@
                                     <a href="#">Contact</a>
                                 </li>
                             </ul>s
-                            </div>
+                        </div>
                     </div>
-                
+
                 </div>
-                    <div class="text-center border-t-1 pt-[20px] border-solid border-light pb-[20px] mt-[40px]">
-                        <p class="text-base" >© 2025-2026 All right reserved to <span class="text-primary">LOREM IPSUM</span></p>
-                    </div>
+                <div class="text-center border-t-1 pt-[20px] border-solid border-light pb-[20px] mt-[40px]">
+                    <p class="text-base">© 2025-2026 All right reserved to <span class="text-primary">LOREM IPSUM</span>
+                    </p>
+                </div>
             </footer>
-             <!-- Footer Section End -->
+            <!-- Footer Section End -->
 
 
 
 
 
-           </div>
         </div>
+    </div>
 
     </div>
 
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-<script>
-  $(document).ready(function(){
-    $(".owl-carousel").owlCarousel({
-      items: 4,         // Number of items per slide
-      loop: true,       // Loop through slides
-      margin: 25,       // Space between items
-      nav: true,        // Show next/prev buttons
-      autoplay: true,   // Auto-play slides
-      autoplayTimeout: 3000 // Slide interval in milliseconds
-    });
-  });
-</script>
-    
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                items: 1,         // Number of items per slide
+                loop: true,       // Loop through slides
+                margin: 25,       // Space between items
+                nav: true,        // Show next/prev buttons
+                autoplay: true,   // Auto-play slides
+                autoplayTimeout: 3000, // Slide interval in milliseconds
+                responsive : {
+                // breakpoint from 0 up
+                768 : {
+                    items: 4,  
+                },
+               
+            }
+            });
+        });
+
+        let header = document.getElementById('main_header');
+        function otherMenu(){
+            if(scrollY > 40){
+                header.classList.add('show_header');
+            }else{
+                header.classList.remove('show_header');
+            }
+        }
+        
+        window.addEventListener('scroll',otherMenu)
+
+    </script>
+
 </body>
 
 </html>
